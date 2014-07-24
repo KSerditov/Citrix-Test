@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProductVersion>5.2</ProductVersion>
+    <ProjectGuid>{e892f37b-739a-40a7-b3e2-c598c59d91d5}</ProjectGuid>
+    <RootNamespace>OpenSpan1</RootNamespace>
+    <AssemblyName>OpenSpan1</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <!-- Custom properties -->
+    <Name>OpenSpan1</Name>
+    <Id>Project-8D173A3D9358F20</Id>
+    <Version>5.2.259.21</Version>
+    <TransformationVersion>5.2.259.6</TransformationVersion>
+    <ConfigurationFile>
+    </ConfigurationFile>
+    <StartupForm>
+    </StartupForm>
+    <TargetLevel>Driver</TargetLevel>
+    <!-- Deployment -->
+    <DeploymentFiles>
+    </DeploymentFiles>
+    <CustomUpgradeVersion>4.0.113.0</CustomUpgradeVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <XmlDocumentation>True</XmlDocumentation>
+    <!-- Deployment -->
+    <DeploymentPackage>True</DeploymentPackage>
+    <DeploymentPath>bin\Debug\</DeploymentPath>
+    <DeploymentVersion>1.0</DeploymentVersion>
+    <DeploymentVersionIncrement>True</DeploymentVersionIncrement>
+    <DeploymentIncludeRunSettings>False</DeploymentIncludeRunSettings>
+    <DeploymentTranslators>True</DeploymentTranslators>
+    <DeploymentAssemblies>True</DeploymentAssemblies>
+    <DeploymentSign>False</DeploymentSign>
+    <DeploymentCertificate>
+    </DeploymentCertificate>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <XmlDocumentation>False</XmlDocumentation>
+    <!-- Deployment -->
+    <DeploymentPackage>True</DeploymentPackage>
+    <DeploymentPath>bin\Release\</DeploymentPath>
+    <DeploymentVersion>1.0</DeploymentVersion>
+    <DeploymentVersionIncrement>True</DeploymentVersionIncrement>
+    <DeploymentIncludeRunSettings>False</DeploymentIncludeRunSettings>
+    <DeploymentTranslators>True</DeploymentTranslators>
+    <DeploymentAssemblies>True</DeploymentAssemblies>
+    <DeploymentSign>False</DeploymentSign>
+    <DeploymentCertificate>
+    </DeploymentCertificate>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OpenSpanEnvVar>OPENSPAN52DIR</OpenSpanEnvVar>
+    <OpenSpanPath>$(OPENSPAN52DIR)</OpenSpanPath>
+  </PropertyGroup>
+  <Import Project="$(OpenSpanPath)\OpenSpan.targets" />
+  <ItemGroup>
+    <Reference Include="OpenSpan.Adapters">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN52DIR)\OpenSpan.Adapters.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.ActiveX, Version=5.2.259.0, Culture=neutral, PublicKeyToken=null">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN52DIR)\OpenSpan.Adapters.ActiveX.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.Windows">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN52DIR)\OpenSpan.Adapters.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Automation">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN52DIR)\OpenSpan.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Automation, Version=5.2.259.0, Culture=neutral, PublicKeyToken=null">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN52DIR)\OpenSpan.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Common, Version=5.2.259.0, Culture=neutral, PublicKeyToken=null">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN52DIR)\OpenSpan.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Connectors.Citrix, Version=5.2.259.0, Culture=neutral, PublicKeyToken=null">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN52DIR)\OpenSpan.Connectors.Citrix.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Controls, Version=5.2.259.0, Culture=neutral, PublicKeyToken=null">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN52DIR)\OpenSpan.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.TranslatorIpc, Version=5.2.259.0, Culture=neutral, PublicKeyToken=null">
+      <Private>False</Private>
+      <HintPath>$(OPENSPAN52DIR)\OpenSpan.TranslatorIpc.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan">
+      <HintPath>$(OPENSPAN52DIR)\OpenSpan.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Runtime.Core">
+      <HintPath>$(OPENSPAN52DIR)\OpenSpan.Runtime.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Citrix">
+      <RunLocal>True</RunLocal>
+      <VCStartupTimeout>50000</VCStartupTimeout>
+      <PingInterval>30000</PingInterval>
+      <CitrixLoginUrl>/Citrix/MetaFrame/auth/login.aspx</CitrixLoginUrl>
+      <Port>80</Port>
+      <SolutionItemType>OpenSpan.Connectors.Citrix.Design.CitrixContextSolutionItem, OpenSpan.Connectors.Citrix.Design, Version=5.2.259.0, Culture=neutral, PublicKeyToken=null</SolutionItemType>
+      <ContextType>Citrix</ContextType>
+    </Folder>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\ImportTypeMap.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Citrix\Calc.os">
+      <SubType>Component</SubType>
+      <Id>WindowsAdapter-8D173A4031A8110</Id>
+    </Compile>
+    <Compile Include="Citrix\E_CE_Pressed.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D173A5118CAA60</Id>
+    </Compile>
+    <Compile Include="Citrix\read_label.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D173A754E691C0</Id>
+    </Compile>
+    <Compile Include="save_log.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8D173A556E66B50</Id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Citrix\Calc.res">
+      <DependentUpon>Citrix\Calc.os</DependentUpon>
+      <Deployment>DoNotDeploy</Deployment>
+    </Content>
+  </ItemGroup>
+</Project>
