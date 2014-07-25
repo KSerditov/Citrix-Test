@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<ProjectHostConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <UptimeBehaviorEnabled>true</UptimeBehaviorEnabled>
+  <IdleBehaviorEnabled>true</IdleBehaviorEnabled>
+  <HotkeysBehaviorEnabled>true</HotkeysBehaviorEnabled>
+  <AppFocusChangeBehaviorEnabled>true</AppFocusChangeBehaviorEnabled>
+  <LockUnlockBehaviorEnabled>true</LockUnlockBehaviorEnabled>
+  <BehaviorsDumpEnabled>false</BehaviorsDumpEnabled>
+  <HotkeyResolutionInterval>100</HotkeyResolutionInterval>
+  <HotkeyContinuousModeFiltering>true</HotkeyContinuousModeFiltering>
+  <InMemoryMessagesLimit>5000</InMemoryMessagesLimit>
+  <DebugMessageOutput>csv</DebugMessageOutput>
+  <DebugMessageOutputFile>messages.csv</DebugMessageOutputFile>
+  <CloudMessagingEnabled>false</CloudMessagingEnabled>
+  <CloudLoggingEnabled>false</CloudLoggingEnabled>
+  <DeploymentPackagePath>.</DeploymentPackagePath>
+  <ExtraLoggingEnabled>true</ExtraLoggingEnabled>
+  <LogTraceLevel>Info</LogTraceLevel>
+  <LocalLogTraceLevel>Verbose</LocalLogTraceLevel>
+  <LocalLogMaxFileSize>1000000</LocalLogMaxFileSize>
+  <LocalLogMaxFileCount>5</LocalLogMaxFileCount>
+  <EventsSendInterval>4000</EventsSendInterval>
+  <LogsSendInterval>30000</LogsSendInterval>
+</ProjectHostConfig>
