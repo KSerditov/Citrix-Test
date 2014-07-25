@@ -1,0 +1,8 @@
+<DeploymentManifest version="4.0">
+  <CompositeStudioProject name="OpenSpan1" fileName="OpenSpan1.dll" assemblyName="OpenSpan1.dll" id="Project-8D173A3D9358F20" version="5.2.259.21" deploymentVersion="1.1" configuration="" deploymentSecurity="None" obfuscated="False" runtime="True" digest="C8819C2050334C2ACA080D222583A7">
+    <Assemblies>
+      <Assembly value="OpenSpan1.dll" digest="132D4FFE596C651C55F90CA4436090" />
+      <Assembly value="OpenSpan1.pdb" digest="6B22A2F02EE2B3D8280AE44AE6F19A" />
+    </Assemblies>
+  </CompositeStudioProject>
+</DeploymentManifest>

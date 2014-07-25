@@ -33,7 +33,7 @@
     <!-- Deployment -->
     <DeploymentPackage>True</DeploymentPackage>
     <DeploymentPath>bin\Debug\</DeploymentPath>
-    <DeploymentVersion>1.0</DeploymentVersion>
+    <DeploymentVersion>1.2</DeploymentVersion>
     <DeploymentVersionIncrement>True</DeploymentVersionIncrement>
     <DeploymentIncludeRunSettings>False</DeploymentIncludeRunSettings>
     <DeploymentTranslators>True</DeploymentTranslators>
@@ -109,6 +109,9 @@
     <Reference Include="System.Drawing">
       <Private>False</Private>
     </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Xml">
       <Private>False</Private>
     </Reference>
@@ -123,13 +126,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Citrix">
-      <RunLocal>True</RunLocal>
+      <RunLocal>False</RunLocal>
       <VCStartupTimeout>50000</VCStartupTimeout>
       <PingInterval>30000</PingInterval>
       <CitrixLoginUrl>/Citrix/MetaFrame/auth/login.aspx</CitrixLoginUrl>
       <Port>80</Port>
       <SolutionItemType>OpenSpan.Connectors.Citrix.Design.CitrixContextSolutionItem, OpenSpan.Connectors.Citrix.Design, Version=5.2.259.0, Culture=neutral, PublicKeyToken=null</SolutionItemType>
       <ContextType>Citrix</ContextType>
+      <CitrixDomain>XA6CR.LAB</CitrixDomain>
+      <DirectConnectAddress>208.43.81.212</DirectConnectAddress>
+      <ProjectToLoadOnServer>c:\transfer\Projects\OpenSpan1.openspan</ProjectToLoadOnServer>
+      <CitrixApplicationName>OpenSpan Runtime</CitrixApplicationName>
+      <ShowPasswordDialog>True</ShowPasswordDialog>
+      <CitrixLogin>Administrator</CitrixLogin>
     </Folder>
     <Folder Include="Properties\" />
   </ItemGroup>
